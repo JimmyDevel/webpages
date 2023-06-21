@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>HTML Head Element Samples</title>
+        
+        <meta name="description" content = "HTML Head Element Page">
+        <meta name="viewpoint" content = "width = device-width, initial scale = 1.0">
+        <meta name="keyword" content = "HTML Head Element samples">
+        <meta name="author" content="Anjum Ashraf">
+
+    <script>
+            function myFirstFunction() {
+                document.getElementById('myText').innerHTML = 'Text changed.';
+            }
+ 
+            function changeBg(bgColor, fColor) {
+
+                    document.body.style.background = bgColor;
+                    document.body.style.color = fColor;
+                    document.getElementById('colorL').style.color = fColor;
+            }
+    </script>
+    </head>
+
+
+
+<body>
+    <p><a id="colorL" href="#colorLink" onclick="changeBg('black', 'white');">Change background color</a></p>
+    <p id="myText">My first JS code.</p>
+    <button type="button" name="testButton" onclick="myFirstFunction();">Try It</button>
+</body>
+
+</html>

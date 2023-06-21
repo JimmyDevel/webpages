@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Media Query</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .left {
+            background-color:rgb(147, 219, 219);
+            padding: 20px;
+            float:left;
+            width:20%;  /* The width is 20%, by default */
+        }
+        .main {
+            background-color:rgb(214, 178, 132);
+            padding: 20px;
+            float:left;
+            width:60%;  /* The width is 60%, by default */
+        }
+        .right {
+            background-color: rgb(209, 187, 230);
+            padding: 20px;
+            float:left;
+            width:20%;  /* The width is 20%, by default */
+        }
+        @media screen and (max-width:800px){
+            .left, .main, .right {
+                width:100%; /* The width is 100%, when the viewpoint is 800px or smaller */
+            }
+            
+        }
+    </style>
+    </head>
+    <body>
+        <h2>HTML Media Query</h2>
+        <p>Resize the browser window</p>
+
+        <div class="left">Left Menu</div>
+        <div class="main">Main Content</div>
+        <div class="right">Right Menu</div>
+    </body>
+</html>

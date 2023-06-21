@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="style.css">
+    <meta name="viewpoint" content = "width=device-width, initial-scale=1.0">
+    </head>
+    <title>Html with Code Examples</title>
+<script>
+
+    function click_Img() {
+
+        alert("You just clicked the USA Flag Image");
+    }
+</script>
+    
+<body>
+    <p><a href="default.html">Back to default page</a></p>
+
+    <p><a href="#a1">Link bookmark #1</a></p>
+    <p><a href="#a2">Link bookmark #2</a></p>
+
+    <pre id="a1"> 
+          This is first paragraph. 
+          Web development is an interesting and exciting field. 
+          You get to create apps which makes people's life easier.</pre>
+
+    <pre id="a2"> 
+          This is 2nd paragraph. 
+          Web development is an interesting and exciting field. 
+          You get to create apps which makes people's life easier.</pre>
+
+          <p style = "border:1px;"><h3>Image with Image Maps - Some have links </h3></p>
+    
+    <img src="images/Bandana.jpg" alt="Bandanas for sale" style="width:868px; height:757px" usemap="#Bandana">
+        <map name = "Bandana">
+            <area shape="rect" coords = "33,60,218,247" alt = "Red Facemask Bandana" title = "Red Facemask Bandana" href = "https://www.amazon.com/Solid-100-Cotton-Unisex-Bandana/dp/B071LNB8RH/ref=sr_1_34?keywords=red+bandana&qid=1683782664&sr=8-34" target = "_blank">
+            <area shape = "rect" coords = "616, 304, 867, 493" onclick = "click_Img()" alt = "USA Flag" title = "About United States of America Flag" href = "https://en.wikipedia.org/wiki/Flag_of_the_United_States" target = "_blank">
+        </map>
+</body>
+    </html>

@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>HTML Responsive Images Sample Page</title>
+    </head>
+
+    <body>
+        <h2>Examples of Responsive Images</h2>
+        <p>When CSS width property set to 100% and height to "auto", the image will scale up or down depending upon the browser window size.</p>
+
+        <img src="images/usa_seller.JPG" style="max-width:100%;height:auto;">
+
+        <h2>Show Different Images Depending on Browser Width</h2>
+        <p>Resize the browser and image will change at 600px and 1500px</p>
+
+        <picture>
+            <source srcset="images/pic_bulbon.gif" media="(max-width:600px)">
+            <source srcset="images/usa_paf_silver.jpg" media="(max-width:1500px)">
+            <source srcset="images/pic_bulboff.gif">
+            <img src="images/pic_bulboff.gif" alt="Bulb Off Image" style="width:auto">
+        </picture>
+    </body>
+</html>

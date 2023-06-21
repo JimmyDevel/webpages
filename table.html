@@ -1,1 +1,426 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="description" content = "Html Table Page">
+        <meta name="viewpoint" content = "width = device-width, initial scale = 1.0">
+        <meta name="keyword" content = "Html table samples">
+        <meta name="author" content="Anjum Ashraf">
+        <style>
+             .table_with_border_only {
+                border: 1px solid black;
+                
+            }
 
+            .table_with_border_collapse {
+                border: 1 px solid black;
+                border-collapse: collapse;
+
+            }
+
+            .table_with_ib_bgc {
+                border:1px solid white;
+                border-collapse: collapse;
+                background-color: #96d4d4;
+            }
+
+            .table_with_round_border th, .table_with_round_border td,.table_with_round_border {
+                border:1px solid black;
+                border-radius: 10px;
+                
+            }
+            .table_with_out_round_border td, .table_with_out_round_border th {
+                border:1px solid black;
+                border-radius: 10px;
+                
+            }
+            .table_with_dotted_border td, .table_with_dotted_border th {
+                border:1px solid black;
+                border-collapse: collapse;
+                border-style: dotted;
+                
+            }
+            .table_with_colored_border th, .table_with_colored_border td, .table_with_colored_border {
+                border: 1px solid #96D4D4;
+                border-collapse: collapse;
+                padding:5px;
+                
+            }    
+            .table_with_zebra_stripes tr:nth-child(even) {
+                background-color: #D6EEEE;
+                border-collapse: collapse;
+                padding:5px;  
+}
+
+            .table_with_vertical_zebra_stripes th:nth-child(even), .table_with_vertical_zebra_stripes td:nth-child(even) {
+                background-color: #D6EEEE;
+                border-collapse: collapse;
+                padding:5px;  
+}
+
+            .table_with_vh_zebra_stripes tr:nth-child(odd), .table_with_vh_zebra_stripes th:nth-child(odd), .table_with_vh_zebra_stripes td:nth-child(odd) {
+                background-color: rgba(150, 212, 212, 0.4);
+                border-collapse: collapse;
+                padding:5px;  
+}
+
+            .table_with_h_dividers tr, .table_with_h_dividers {
+                border-bottom: 1px solid #ddd;
+                border-collapse: collapse;
+                width: 100%;
+                
+}  
+
+            .table_with_hover tr:hover{
+                
+                background-color: #D6EEEE;
+            
+            } 
+            .table_with_hover tr, .table_with_hover {
+                border-bottom: 1px solid #ddd;
+                border-collapse: collapse;
+                width: 100%;
+                
+}  
+
+        </style>
+    </head>
+    <title>Html Table</title>
+
+    <body><h3>Using different stylesheet class to display table view.</h3> 
+         <!---- Table with border-->
+         <h2>Table with border</h2>  
+                <table style="width:100%" class="table_with_border_only" border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age (Years)</th>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Bone</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>Donald</td>
+                <td>Trump</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>Mona</td>
+                <td>Lisa</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <br><br>
+        <!-- Table with collapse border-->
+
+        <h2>Table with collapse border</h2>
+        <table style="width:100%" class="table_with_border_collapse" border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age (Years)</th>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Bone</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>Donald</td>
+                <td>Trump</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>Mona</td>
+                <td>Lisa</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <br><br>
+        <!-- Table with invisible border amd background color-->
+        <h2>Table with invisible border and background color</h2>
+        <table style="width:100%" class="table_with_ib_bgc" border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age (Years)</th>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Bone</td>
+                <td>49</td>
+            </tr>
+            <tr>
+                <td>Donald</td>
+                <td>Trump</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>Mona</td>
+                <td>Lisa</td>
+                <td>100</td>
+            </tr>
+        </table>
+
+        <br><br>
+           <!-- Table with round border-->
+           <h2>Round Table Borders</h2>
+           <table style="width:100%" class="table_with_round_border">
+            
+                <tr>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Age (Years)</th>
+               </tr>
+               <tr>
+                   <td>James</td>
+                   <td>Bone</td>
+                   <td>49</td>
+               </tr>
+               <tr>
+                   <td>Donald</td>
+                   <td>Trump</td>
+                   <td>72</td>
+               </tr>
+               <tr>
+                   <td>Mona</td>
+                   <td>Lisa</td>
+                   <td>100</td>
+               </tr>
+           </table>
+
+           <br><br>
+           <!-- Table with round border-->
+           <h2>Round Table Borders</h2>
+           <table style="width:100%" class="table_with_out_round_border">
+            
+                <tr>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Age (Years)</th>
+               </tr>
+               <tr>
+                   <td>James</td>
+                   <td>Bone</td>
+                   <td>49</td>
+               </tr>
+               <tr>
+                   <td>Donald</td>
+                   <td>Trump</td>
+                   <td>72</td>
+               </tr>
+               <tr>
+                   <td>Mona</td>
+                   <td>Lisa</td>
+                   <td>100</td>
+               </tr>
+           </table>
+
+           <br><br>
+           <!-- Table with dotted round border-->
+           <h2>Dotted Table Borders</h2>
+           <table style="width:100%" class="table_with_dotted_border">
+            
+                <tr>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Age (Years)</th>
+               </tr>
+               <tr>
+                   <td>James</td>
+                   <td>Bone</td>
+                   <td>49</td>
+               </tr>
+               <tr>
+                   <td>Donald</td>
+                   <td>Trump</td>
+                   <td>72</td>
+               </tr>
+               <tr>
+                   <td>Mona</td>
+                   <td>Lisa</td>
+                   <td>100</td>
+               </tr>
+           </table>
+
+           <br><br>
+           <!-- Table with colored border-->
+           <h2>Table with Colored Borders,Column Span and Cell padding</h2>
+           <table style="width:100%" class="table_with_colored_border">
+            
+                <tr>
+                   <th colspan="2">Name</th>
+                   
+                   <th>Age (Years)</th>
+               </tr>
+               <tr>
+                   <td>James</td>
+                   <td>Bone</td>
+                   <td>49</td>
+               </tr>
+               <tr>
+                   <td>Donald</td>
+                   <td>Trump</td>
+                   <td>72</td>
+               </tr>
+               <tr>
+                   <td>Mona</td>
+                   <td>Lisa</td>
+                   <td>100</td>
+               </tr>
+           </table>
+
+           <br><br>
+           <!-- Table with zebra stripes-->
+   
+           <h2>Table with Zebra Stripes</h2>
+           <table style="width:100%" class="table_with_zebra_stripes">
+               <tr>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Age (Years)</th>
+               </tr>
+               <tr>
+                   <td>James</td>
+                   <td>Bone</td>
+                   <td>49</td>
+               </tr>
+               <tr>
+                   <td>Donald</td>
+                   <td>Trump</td>
+                   <td>72</td>
+               </tr>
+               <tr>
+                   <td>Mona</td>
+                   <td>Lisa</td>
+                   <td>100</td>
+               </tr>
+           </table>
+        
+
+             <!-- Table with vertical zebra stripes-->
+   
+                   <h2>Table with Vertical Zebra Stripes</h2>
+                   <table style="width:100%" class="table_with_vertical_zebra_stripes">
+                       <tr>
+                           <th>First Name</th>
+                           <th>Last Name</th>
+                           <th>Age (Years)</th>
+                       </tr>
+                       <tr>
+                           <td>James</td>
+                           <td>Bone</td>
+                           <td>49</td>
+                       </tr>
+                       <tr>
+                           <td>Donald</td>
+                           <td>Trump</td>
+                           <td>72</td>
+                       </tr>
+                       <tr>
+                           <td>Mona</td>
+                           <td>Lisa</td>
+                           <td>100</td>
+                       </tr>
+                   </table>
+
+                 <!-- Table with combined vertical & horizental zebra stripes-->
+   
+                   <h2>Table with Combined Vertical and Horizental Zebra Stripes</h2>
+                   <table style="width:100%" class="table_with_vh_zebra_stripes">
+                       <tr>
+                           <th>First Name</th>
+                           <th>Last Name</th>
+                           <th>Age (Years)</th>
+                       </tr>
+                       <tr>
+                           <td>James</td>
+                           <td>Bone</td>
+                           <td>49</td>
+                       </tr>
+                       <tr>
+                           <td>Donald</td>
+                           <td>Trump</td>
+                           <td>72</td>
+                       </tr>
+                       <tr>
+                           <td>Mona</td>
+                           <td>Lisa</td>
+                           <td>100</td>
+                       </tr>
+                   </table>
+                
+                <br><br>
+                 <!-- Table with horizental divider-->
+   
+                 <h2>Table with Horizental Dividers</h2>
+                 <table style="width:100%" class="table_with_h_dividers">
+                     <tr>
+                         <th>First Name</th>
+                         <th>Last Name</th>
+                         <th>Age (Years)</th>
+                     </tr>
+                     <tr>
+                         <td>James</td>
+                         <td>Bone</td>
+                         <td>49</td>
+                     </tr>
+                     <tr>
+                         <td>Donald</td>
+                         <td>Trump</td>
+                         <td>72</td>
+                     </tr>
+                     <tr>
+                         <td>Mona</td>
+                         <td>Lisa</td>
+                         <td>100</td>
+                     </tr>
+                 </table>
+
+                 <br><br>
+                 <!-- Table with hover-->
+   
+                 <h2>Table with Hover</h2>
+                 <table style="width:100%" class="table_with_hover">
+                     <tr>
+                         <th>First Name</th>
+                         <th>Last Name</th>
+                         <th>Age (Years)</th>
+                     </tr>
+                     <tr>
+                         <td>James</td>
+                         <td>Bone</td>
+                         <td>49</td>
+                     </tr>
+                     <tr>
+                         <td>Donald</td>
+                         <td>Trump</td>
+                         <td>72</td>
+                     </tr>
+                     <tr>
+                         <td>Mona</td>
+                         <td>Lisa</td>
+                         <td>100</td>
+                     </tr>
+                 </table>
+            
+            <br><br>
+            <!-- HTML Table Colgroup-->
+            <table style="width:100%">
+                <colgroup>
+                    <col span = "2">
+                    <col span = "3" style = "visibility: collapse">
+                </colgroup>
+                <tr>
+                    <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+                </tr>
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+
+            </table>
+
+    </body>
+</html>

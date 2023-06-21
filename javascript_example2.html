@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="description" content = "Javascript Page">
+        <meta name="viewpoint" content = "width = device-width, initial scale = 1.0">
+        <meta name="keyword" content = "Javascript samples">
+        <meta name="author" content="Anjum Ashraf">
+    </head>
+
+<title>Javascript Samples</title>
+
+<body>
+
+    <h2>Javascript Sample</h2>
+        <button type="button" onclick="document.getElementById('getDate').innerHTML = Date();">Click to view current date/time</button>
+    <p id="getDate"></p>
+
+    <h2>Changing content of an HTML element</h2>
+        <button type="button" onclick="myFunction();">Click Here</button>
+        <p id="change">Dynamic text</p>
+        <script>
+            function myFunction(){
+                document.getElementById("change").innerHTML = "This is magic";
+            }
+        </script>
+
+    <h2>Changing style with javascript</h2>
+        <p id="changeStyle">Javascript can change the style of HTML element.</p>
+
+        <script>
+            function changeStyle(){
+                document.getElementById("changeStyle").style.fontSize = "15px";
+                document.getElementById("changeStyle").style.backgroundColor = "yellow";
+                document.getElementById("changeStyle").style.color = "red";
+            }
+        </script>
+
+        <button type="button" onclick = "changeStyle();">Click to change JS style</button>
+
+
+    
+        <h2>Javascript changing the value of src attribute of an image</h2>
+
+        <script>
+            function light(sw){
+                var pic;
+                    if (sw == 0) {
+                        pic = "images/pic_bulboff.gif";
+                    } else {
+                        pic = "images/pic_bulbon.gif";
+                    }
+                document.getElementById('mainImg').src = pic;
+            }
+        </script>
+            <img id="mainImg" src="images/pic_bulboff.gif" width="100" height="180">
+            <p>
+                <button type="button" onclick ="light(1)">Light On</button>
+                <button type="button" onclick = "light(0)">Light Off</button>
+            </p>
+
+    </body>
+</html>

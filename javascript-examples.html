@@ -1,0 +1,81 @@
+<! doctype html>
+<html>
+    <head>
+        <meta name="description" content = "Javascript Example Page">
+        <meta name="viewpoint" content = "width = device-width, initial scale = 1.0">
+        <meta name="keyword" content = "Javascript samples">
+        <meta name="author" content="Anjum Ashraf">
+
+        <script src="js_function.js"></script>
+
+        <script>
+                function writeText() {
+                    document.getElementById('pChange').innerHTML='Paragraph changed by using function.';
+                }
+
+        </script>
+    </head>
+        <title>
+                Javascript Examples
+        </title>
+
+        <body>
+            <h3>Javascript HTML content change</h3>
+           <p id = "demo">Javascript changing HTML content</p> 
+           <button type = "button" onclick = 'document.getElementById("demo").innerHTML = "Content change"'>Change Content</button>
+
+           <h3>Javascript changing value of the src attribute</h3>
+
+            <button type = "Button" onclick = "document.getElementById('myBulb').src='images/pic_bulbon.gif'">Turn on light</button>
+                    <img id="myBulb" src = "images/pic_bulboff.gif" style = "width:100px">
+            <button type = "button" onclick = "document.getElementById('myBulb').src='images/pic_bulboff.gif'">Turn off light</button>
+
+            <h3>Javascript changing HTML Styles</h3>
+                <p id="fontSize">Using JS to change font size</p>
+                <button type = "button" onclick = "document.getElementById('fontSize').style.fontSize = '2.18em'">Changing font size to 35px</button>
+                <button type = "button" onclick = "document.getElementById('fontSize').style.fontSize = 'medium'">Re-set font size to default</button>
+
+            <h3>JS hiding HTML elements</h3>
+                <p id="hideHtmlElement">This html element will hide</p>
+                <button type="button" onclick= 'document.getElementById("hideHtmlElement").style.display="none"'>Onclick, hide html element</button>
+                <button type="button" onclick= 'document.getElementById("hideHtmlElement").style.display="inherit"'>Onclick, revert html element to default</button>
+
+            <h3>Writing JS in a body</h3>
+                <p id="bodyText"></p>
+                <script>
+                    document.getElementById("bodyText").innerHTML="Writing html in body using JS";
+                </script>
+            <h3>Using JS fucntion to replace text</h3>
+                <p id="pChange">A paragraph</p>
+                    <button type="button" onclick = "writeText();">Try it</button>
+
+            <h3>JS display method #1</h3>
+                <p>By using <em>document.getElementById() method</em> and <em>innerHTML property</em></p>
+                <p id="jsDisplay1"></p>
+                    <script>
+                        document.getElementById('jsDisplay1').innerHTML = 5 + 6;
+                    </script>
+
+            <h3>JS display method #2</h3>
+                <p>By using <em>document.write() method</em></p>  
+                <p>This text will delete once <em>document.write() method invoke</em></p>
+                    
+                       <button type="button" onclick="document.write('This method is good for testing purpose only')">Try it</button>
+             
+            <h3>JS display method #3</h3>
+                <p>By using <em>document.alert() method</em></p>
+                    <script>
+                     function wind() {
+                        win = window.alert('Usually used for validation or warrning');
+                     }
+                    </script>
+                        <botton type="button" onclick = wind();>Click to see alert message</botton>
+
+            <h3>JS display method #4</h3>
+                <p>By using <em>console.log method</em></p>
+                <script>
+                    console.log("This method used for debugging purpose");
+                </script>
+                           
+            </body>
+</html>

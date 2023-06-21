@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Class & Id Sample Page</title>
+        <meta name="description" content = "Html Class & Id">
+        <meta name="viewpoint" content = "width = device-width, initial scale = 1.0">
+        <meta name="keyword" content = "Html Class and Id samples">
+        <meta name="author" content="Anjum Ashraf">
+
+        <style>
+
+            .capital {
+                background-color: Blue;
+                color: white;
+                border: 2px solid black;
+                margin:5px;
+                padding: 10px;
+
+            }
+
+            .text_Style {
+                font-size: 120%;
+                color:red;
+            }
+
+            .city {
+                background-color: olivedrab;
+                color: white;
+                padding: 10px;
+
+            }
+
+            .main {
+                text-align: center;
+
+            }
+
+            #myHeader {
+                background-color:grey;
+                color:black;
+                padding:40px;
+                text-align:center;
+
+            }
+
+
+        </style>
+    </head>
+
+    
+
+    <body>
+        <h2>Using Classs Attribute "div"</h2>
+        <div class="capital">
+        <h2>Brussels</h2>
+            <p>Brussels is the capital of Belgium.</p>
+        </div>
+        <div class="capital">
+        <h2>Madrid</h2>
+            <p>Madrid is the capital of Spain.</p>
+        </div>
+        <div class="capital">
+        <h2>Rome</h2>
+            <p>Rome is the capital of Italy</p>
+        </div>
+
+        <h2>Using Class Attribute "Span"</h2>
+            <h1>This is my <span class="text_Style">important</span> heading.</h1>
+            <p>This is some <span class="text_Style">important</span> text. </p>
+
+        <h2>Class Attribute</h2>
+            <p>Using CSS to style element:</p>
+            <h2 class="city">Brussels</h2>
+            <p>Brussels is the capital of Belgium.</p>
+
+            <h2 class="city">Madrid</h2>
+            <p>Madrid is the capital of Spain.</p>
+
+            <h2 class="city">Rome</h2>
+            <p>Rome is the capital of Italy</p>
+
+        <h2>Multiple Classes</h2>
+            <p>Here, all three belongs to "city" class. In addition, Brussels also belongs to "main" class.</p>
+            <h2 class="city main">Brussels</h2>
+            <h2 class="city">Rome</h2>
+            <h2 class="city">Madrid</h2>
+
+        <h2 id="myHeader">Using Id Attribute</h2>
+
+        <h2>Using ID Attribute in JAvascript</h2>
+        <h3 id="myHeaders">HEllo there</h3>
+            <button onclick = "displayResult();">Change Text</button>
+
+        <script>
+            function displayResult(){
+                document.getElementById("myHeaders").innerHTML = "Have a nice day";
+            }
+        </script>
+        </body>
+    </html>

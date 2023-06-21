@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="description" content = "Javascript Example Page">
+        <meta name="viewpoint" content = "width = device-width, initial scale = 1.0">
+        <meta name="keyword" content = "Javascript samples">
+        <meta name="author" content="Anjum Ashraf">
+    </head>
+    <title>
+        JS Basics ///-->
+    </title>
+
+    <body>
+        <h3>4 Ways to Declare a JS Variables</h3>
+        <h4>Declaring variable with "var" keyword:</h4>
+    <pre>
+        var x = 1;
+        var y = 2;
+        var z = x + y;
+    </pre>
+        <p id="var1"></p>
+            <script>
+                var x = 1;
+                var y = 2;
+                var z = x + y;
+                document.getElementById("var1").innerHTML = 'The value of z is: ' + z;
+            </script>
+
+        <h4>Declaring variable with "let" keyword</h4>
+    <pre>
+        let a = 1;
+        let b = 2;
+        let c = a + b;
+    </pre>
+        <p id="var2"></p>
+            <script>
+                let a = 1;
+                let b = 2;
+                let c = a + b;
+                    document.getElementById("var2").innerHTML = 'The value of c is: ' + c;
+            </script>
+
+        <h4>Undeclared variables</h4>
+    <pre>
+        g = 1;
+        k = 2;
+        m = g + k;
+    </pre>
+            <p id="var3"></p>
+                <script>
+                    g = 1;
+                    k = 2;
+                    m = g + k;
+                        document.getElementById("var3").innerHTML = ' The value of m is: ' + m;
+                </script>
+
+        <h4>Mix use of let and const keyword</h4>
+    <pre>       
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+        document.getElementById("var4").innerHTML = 'The total is: ' + total;       
+    </pre>
+            <p id="var4"></p>
+                <script>
+                    const price1 = 5;
+                    const price2 = 6;
+                    let total = price1 + price2;
+                        document.getElementById("var4").innerHTML = 'The total is: ' + total;
+                </script>
+    <h3>Example of string and number datatypes</h3>
+            <p id="strdata"></p>
+                <script>
+                    const pi = 3.14;
+                    let person = "John Doe"
+                    let answer = "Yes I am"    
+                        document.getElementById("strdata").innerHTML = answer + " " + person + " and I love value of PI " + pi;
+                </script>
+    <h3>Declaring variable in one statement</h3>
+            <p id="varOneStat"></p>
+                <script>
+                    let per = "John", carName = "Toyota", price = 2000;
+                        document.getElementById("varOneStat").innerHTML = per + " bought " + carName + " for " + Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(price);    
+                        
+                </script>    
+        
+    </body>
+</html>
