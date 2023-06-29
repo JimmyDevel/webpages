@@ -5,18 +5,76 @@
         <title>HTLM CSS Travel Sample Site</title>
     <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .menu {
+        float:left;
+        width:20%;
+      }
+      .menuitem {
+        padding:8px;
+        margin-top:7px;
+        border-bottom: 1px solid #f3f3f3;
+      }
+      .main {
+        float:left;
+        width:60%;
+        padding:0 20px;
+        overflow:hidden;
+      }
+      .right {
+        background-color: rgb(219, 230, 226);
+        float:left;
+        width:20%;
+        padding:10px 15px;
+        margin-top:7px;
+      }
+      @media only screen and (max-width:800px) {
+        /*for tablet*/
+          .main {
+            width:80%;
+            padding:0;
+          }
+          .right {
+            width:100%;
+          }
+      }
+      @media only screen and (max-width:500px) {
+        /*for mobile phones*/
+        .menu, .main, .right {
+          width:100%;
+        }
+      }
 
     </style>
     </head>
     <body style="font-family: Arial, Helvetica, sans-serif;">
-     
-      <div style="background-image: url('images/spain_1.jpg'); background-size:50% 100%; background-repeat:no-repeat; border-radius:15px;">    
-        <h1>Things to do in Spain</h1>
-        
-        <h2>Popular destination</h2>
-        <h3>Most visited places</h3>
-        <h4>What is this</h4>
-        <br><br>
-      </div>
+     <h1>Spain Tourist Website</h1>
+     <h3>Resize the browser window</h3>
+
+     <div style="overflow:auto">
+     <div class="menu">
+        <div class="menuitem">Famous Cities</div>
+        <div class="menuitem">Hotels</div>
+        <div class="menuitem">Restaurants</div>
+        <div class="menuitem">Transportation</div>
+     </div>
+     <div class="main">
+      <h2>Famous Cities</h2>
+      <p>Most popular cities in Spain are: Madrid, Barcelona, Seville, Granada, Toledo, Cordoba</p>
+      <img src="images/Spain_1.jpg" style="width:100%">
+     </div>
+     <div class="right">
+      <h2>What?</h2>
+      <p>Spain is famous of beautiful architect, landscape and history.</p>
+      <h2>Where?</h2>
+      <p>Spain is located in mediterranean area.</p>
+      <h2>Price</h2>
+      <p>Hotels, transportation, food is affordable compare to other european countries.</p>
+     </div>
+     </div>
+     <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design. Resize the browser window to see the content respond to the resizing.</div>
     </body>
 </html>
